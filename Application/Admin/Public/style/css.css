@@ -1,0 +1,36 @@
+.frame{
+  width:1180px;
+  margin:0 auto;
+  height:520px;
+}
+.table_box{
+	width:1180px;
+	
+	overflow:auto;
+}
+.form_box{
+	margin-top:-20px;
+	width:1000px;
+	height:80px;
+	border:1px solid #DDDDDD;
+	border-top:none;
+	overflow:hidden;
+}
+th{
+	width:50px;
+	text-align:center;
+}
+td{
+	width:50px;
+}
+p{
+	margin:0 auto;
+	height:50px;
+	font-size:30px;
+	text-align:center;
+}
+.but{
+	width:200px;
+	margin-top:20px;
+	margin-left:57px;
+}
