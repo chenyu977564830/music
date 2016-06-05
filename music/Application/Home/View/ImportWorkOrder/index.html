@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src='__PUBLIC__/style/jquery-1.7.2.min.js'></script>
+	<script type="text/javascript" src="__PUBLIC__/style/layer/layer.js"></script>
+	<link rel="stylesheet" href="__PUBLIC__/style/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="__PUBLIC__/style/css.css">
+</head>
+<body>
+	<div class="bs-example frame" data-example-id="bordered-table" >
+	<!-- <h2>工单分配</h2> -->
+	<p class="bg-primary">上传工单</p>
+	<div class="table_box">
+	<form id="addform" name="addform" " action="__CONTROLLER__/uploadExcel" method="post" enctype="multipart/form-data">
+		<table class="table table-bordered">
+	      <thead>
+	        <tr class="active">
+		     	<th align="right">选择上传工单</th>
+				<th> <input id="lefile" type="file"  name="excelData" ></th>
+	          
+	      	</tr>    
+	      </thead>
+	    
+	      <tbody>
+	      <foreach name='data' item='v'>
+		      <tr>
+		      	<td>{$v.app_name}</td>
+		      </tr>
+	      </foreach>
+
+	      </tbody>
+	    </table>
+	   <div class="form_box">
+			
+		    	<div class="but">
+		    		<input type="submit" class="btn btn-primary btn-lg btn-block" value="开始上传" />
+		    	</div>
+		    	
+		</form>
+    	</div>
+	</div>
+   
+   
+  </div>
+  
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src='__PUBLIC__/style/jquery-1.7.2.min.js'></script>
+	<script type="text/javascript" src="__PUBLIC__/style/layer/layer.js"></script>
+	<link rel="stylesheet" href="__PUBLIC__/style/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="__PUBLIC__/style/css.css">
+</head>
+<body>
+	<div class="bs-example frame" data-example-id="bordered-table" >
+	<!-- <h2>工单分配</h2> -->
+	<p class="bg-primary">在审核项目</p>
+	<div class="table_box">
+		<table class="table table-bordered">
+	      <thead>
+	        <tr class="active">
+	          <th>项目名称</th>
+	          <th>审核人员</th>
+	          <th>分配时间</th>
+	      	</tr>    
+	      </thead>
+	    <form action="" method="post">
+	      <tbody>
+	      <foreach name='data' item='v'>
+		      <tr>
+		      	<td>{$v.app_name}</td>
+		      	<td>{$v.auditor}</td>
+		      	<td>{$v.distribute_time|date="Y-m-d H:m:s",###}</td>
+		      	
+		      </tr>
+	      </foreach>
+	      </tbody>
+	    </table>
+	   
+	</div>
+   
+   
+  </div>
+  
+
+</body>
+</html>
