@@ -1,0 +1,45 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>在审核项目</title>
+	<script type="text/javascript" src='/music/Public/style/jquery-1.7.2.min.js'></script>
+	<script type="text/javascript" src="/music/Public/style/layer/layer.js"></script>
+	<link rel="stylesheet" href="/music/Public/style/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/music/Public/style/css.css">
+</head>
+<body>
+	<div class="bs-example frame" data-example-id="bordered-table" >
+	<p class="bg-primary">在审核项目</p>
+	<div class="table_box">
+		<table class="table table-bordered">
+	      <thead>
+	        <tr class="active">
+	          <th>审核项目名</th>
+	          <th>公司名</th>
+	          <th>歌曲数</th>
+	          <th>歌曲列表</th>
+	          <th>项目生成时间</th>
+	          <th>审核人员</th>
+	          <th>修改审核人</th>
+	        </tr>
+	      </thead>
+	      <tbody>
+	      	<tr>
+	      		<td></td>
+	      		<td></td>
+	      		<td></td>
+	      		<td></td>
+	      		<td></td>
+	      		<td><select name="" id="">
+	      			<option value="">张三</option>
+	      			<option value="">李四</option>
+	      		</select></td>
+	      		<td align="center"><a href="">执行修改</a></td>
+	      	</tr>
+	      </tbody>
+	    </table>
+	</div>
+  </div>
+</body>
+</html>
