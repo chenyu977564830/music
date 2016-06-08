@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>工单下载</title>
+	<script type="text/javascript" src='__PUBLIC__/style/jquery-1.7.2.min.js'></script>
+	<script type="text/javascript" src="__PUBLIC__/style/layer/layer.js"></script>
+	<link rel="stylesheet" href="__PUBLIC__/style/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="__PUBLIC__/style/css.css">
+</head>
+<body>
+	<div class="bs-example frame" data-example-id="bordered-table" >
+	<p class="bg-primary">数据库到服务器</p>
+	<div class="table_box">
+		<table class="table table-bordered">
+	      <thead>
+	        <tr class="active">
+	          <foreach name="data0" item='v' key="k">
+	          <th>{$k}</th>
+	          </foreach>
+	        </tr>
+	      </thead>
+	      <tbody>
+	      <foreach name="data1" item="v1">
+	        <tr>	
+		        <for start='0' end="$num">
+		        	<td>{$v1[$i]}</td>
+		        </for>
+	        </tr>
+	        </foreach>
+	      </tbody>
+	    </table>
+	    <div class="form_box">
+			<form action="__CONTROLLER__/runDownload">
+		    	<div class="but">
+		    		<button type="submit" class="btn btn-primary btn-lg btn-block">开始下载</button>
+		    	</div>
+		    	
+		    </form>
+    	</div>
+	</div>
+  </div>
+</body>
+</html>
+
